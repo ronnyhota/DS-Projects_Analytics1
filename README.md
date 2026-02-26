@@ -2,20 +2,22 @@
 
 # Project 1: Mortality Prediction using k-NN
 
-## What This Project Is About
+## What This Project Is About:
 This project uses real health data collected by the CDC to predict two things:
 1. Whether a person will die within a 20 year follow up window (classification)
 2. How many months a person is likely to survive (regression)
 
 We used a machine learning algorithm called k-Nearest Neighbors (kNN) to make these predictions. The idea behind kNN is simple: to predict an outcome for a new person, the algorithm finds the k most similar people in the training data and uses their outcomes to make a prediction.
 
-## Where The Data Comes From
+## Where The Data Comes From -->
 The data comes from two sources that we merged together:
 
 **NHANES 1999 to 2000 (National Health and Nutritional Examination Survey)**
+
 This survey was collected by the CDC to measure the health and nutritional status of adults living in the United States. Each row in the dataset represents one survey participant. The survey includes information about demographics, body measurements, and blood pressure readings.
 
 **CDC Linked Mortality File**
+
 This file tracks whether NHANES participants later died, and if so, how many months after the survey they passed away. The mortality data goes up until December 31 2019. This gives us almost 20 years of follow up data for each participant.
 
 ## The Files In This Repo

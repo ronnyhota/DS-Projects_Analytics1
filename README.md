@@ -29,15 +29,15 @@ This file tracks whether NHANES participants later died, and if so, how many mon
 ## The Variables We Used
 We selected five variables to predict mortality and survival time:
 
-**RIDAGEEX** — Age in months at the time of the medical examination. We used this instead of age in years because it is more precise and captures differences that matter more at older ages.
+**RIDAGEEX** --> Age in months at the time of the medical examination. We used this instead of age in years because it is more precise and captures differences that matter more at older ages.
 
-**RIAGENDR** — Gender of the participant. Males had a higher mortality rate (around 35%) compared to females (around 27%) in our data.
+**RIAGENDR** --> Gender of the participant. Males had a higher mortality rate (around 35%) compared to females (around 27%) in our data.
 
-**RIDRETH1** — Race and ethnicity of the participant. We found meaningful differences in mortality rates across groups. Non-Hispanic White participants the highest mortality rate at 37.4% and Other Hispanic participants had the lowest at 21.7%.
+**RIDRETH1** --> Race and ethnicity of the participant. We found meaningful differences in mortality rates across groups. Non-Hispanic White participants the highest mortality rate at 37.4% and Other Hispanic participants had the lowest at 21.7%.
 
-**BMXBMI** — Body Mass Index. A measure of obesity related health risk. BMI showed almost no direct correlation with mortality on its own (r = 0.03) but was still included as it may interact with other variables.
+**BMXBMI** --> Body Mass Index. A measure of obesity related health risk. BMI showed almost no direct correlation with mortality on its own (r = 0.03) but was still included as it may interact with other variables.
 
-**BPXSY1** — Systolic blood pressure. High blood pressure is a major cause of cardiovascular disease and death. It showed a moderate correlation with mortality in our data (r = 0.44).
+**BPXSY1** --> Systolic blood pressure. High blood pressure is a major cause of cardiovascular disease and death. It showed a moderate correlation with mortality in our data (r = 0.44).
 
 ## What We Did Step By Step
 

@@ -2,6 +2,8 @@
 
 # Project 1: Mortality Prediction using k-NN
 
+By: Raunak Hota (Ronny - pzd5fp)
+
 ## What This Project Is About:
 This project uses real health data collected by the CDC to predict two things:
 1. Whether a person will die within a 20 year follow up window (classification)

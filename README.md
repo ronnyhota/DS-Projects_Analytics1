@@ -42,9 +42,11 @@ We selected five variables to predict mortality and survival time:
 ## What We Did Step By Step
 
 **Step 1: Data Wrangling**
+
 We downloaded the NHANES demographics file and the CDC Linked Mortality File and merged them together using a shared participant ID called SEQN. We then added body measures and blood pressure data using additional merges. The final dataset had 9965 rows and 217 columns. After dropping participants who were ineligible for mortality follow up we were left with 5445 participants.
 
 **Step 2: Exploratory Data Analysis**
+
 We explored the data using histograms, a correlation heatmap, scatter plots, boxplots, and contingency tables. Key findings included:
 - Age is the strongest predictor of mortality with a correlation of 0.67
 - Systolic blood pressure is moderately correlated with mortality at 0.44
@@ -54,12 +56,15 @@ We explored the data using histograms, a correlation heatmap, scatter plots, box
 - Non-Hispanic White participants had the highest mortality rate across all racial and ethnic groups
 
 **Step 3: Feature Scaling**
+
 Before running kNN we standardized all features using StandardScaler. This is critical because kNN uses Euclidean distance to find similar observations. Without scaling, age in months (which ranges from 216 to 1019) would dominate over gender (which is just 1 or 2) purely because of the difference in scale.
 
 **Step 4: kNN Mortality Classifier**
+
 We trained a kNN classifier to predict whether a participant died (MORTSTAT). We tested k values of 1, 3, 5, 10, 20, and 50. The best result was at k = 50 with 83.7% accuracy on the test set. We confirmed this using 5 fold-cross validation which gave a mean accuracy of 85.3% with a standard deviation of only 1.1%, confirming the model is stable and not just the result of a lucky train test split.
 
 **Step 5: kNN Life Expectancy Regressor**
+
 We trained a kNN regressor to predict how many months a participant would survive (PERMTH_INT). We tested the same k values. The best result was at k = 50 with an RMSE of 49 months, meaning our predictions are off by about 4 years on average. The model struggles with exact predictions because most participants survived the full follow up window, making the target variable heavily skewed.
 
 ## Key Results

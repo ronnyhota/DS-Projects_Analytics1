@@ -2,7 +2,7 @@
 
 # Project 1: Mortality Prediction using k-NN
 
-By: Raunak Hota (Ronny - pzd5fp)
+By: Raunak Hota (Ronny)
 
 ## What This Project Is About:
 This project uses real health data collected by the CDC to predict two things:
